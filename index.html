@@ -1,17 +1,25 @@
 <html>
-
 <head>
-
+<link rel="stylesheet" type="text/css" href="css/survey.css">
 </head>
-
 <body>
-<form>
-<input type="text"> </input> <br />
-
+ <form id="surveyForm">
+  <div class="tab"> Name
+   <p><input type="text" placeholder="First Name" name="firstName"></p>
+   <p><input type="text" placeholder="Last Name" name="lastName"></p>
+  </div>
+  <div class="tab"> Age
+   <p><input type="text" placeholder="Age" name="age"></p>
+  </div>
+  <div class="tab"> Additional Information
+  <p><input type="text" placeholder="Info" name="Infobox"></p>
+  </div>
+  <div>
+   <button type="button" id = "previous" onclick="showTab(-1)">Vorherige Seite</button>
+   <button type="button" id = "next" onclick="showTab(1)">N&aumlchste Seite</button>
+  <div>
 </form>
-
+<script src="js/survey.js"></script>
 </body>
-
-
 </html>
 
